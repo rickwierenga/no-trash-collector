@@ -1,0 +1,21 @@
+{
+  "name": "No Trash Observer",
+  "version": "1.0",
+  "permissions": ["tabs", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Check if current page is one of your whitelists",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "css": ["main.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": { "512": "icon.png" }
+}

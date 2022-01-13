@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>No Trash Onboarding</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="no-trash-element no-trash-narrow">
+      <div class="icon">
+        <img src="./icon.png" alt="No Trash Icon" width="128" height="128" />
+      </div>
+      <h1><span id="login-message">Log in to</span> No Trash Collector</h1>
+      <p class="intro">
+        Checks if the webpage you are currently visiting is a member of any of
+        your whitelists. Checks are done locally. The URL is submitted only when
+        you explicitly confirm it on each page.
+        <a
+          href="https://github.com/notrashsearch/notrashcollector"
+          target="_blank"
+          >Source code</a
+        >.
+      </p>
+
+      <div id="login">
+        <div class="form">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="username"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="password"
+          />
+          <button id="login-btn">Login</button>
+          <a
+            href="https://beta.notrashsearch.com"
+            class="create-account"
+            target="_blank"
+            >Create Account on NoTrashSearch.com</a
+          >
+        </div>
+      </div>
+
+      <div id="account">
+        <p>
+          Account:
+          <a
+            href="https://beta.notrashsearch.com/u/"
+            target="_blank"
+            id="username-holder"
+          ></a>
+        </p>
+        <h2>Actions</h2>
+        <a
+          id="edit-settings"
+          href="https://beta.notrashsearch.com/settings"
+          target="_blank"
+          class="btn"
+          >Edit Search Settings</a
+        >
+        <a id="view-public-btn" class="btn">View Public Profile</a>
+        <button id="import-btn">Import most visited sites</button>
+        <button id="logout-btn">Logout</button>
+      </div>
+    </div>
+
+    <script src="onboarding.js"></script>
+  </body>
+</html>
